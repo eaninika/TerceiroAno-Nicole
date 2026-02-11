@@ -1,17 +1,14 @@
+.header_container{
+    background-color: #212623;    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     background-color: #ffffff;
-}
-
-header{
-    background-color: #212623;
-    width: 100%;
-    height: 115px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 nav{
@@ -22,13 +19,20 @@ nav{
 }
 
 .containernav{
-    display: inline;
+    width: 100%;
 }
 
-ul{
+.containernav ul{
     list-style-type: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.containernav ul li{
+    list-style: none;
 }
 
 a{
@@ -58,68 +62,105 @@ img{
     margin-top: 20px;
 }
 
-.containerserach{
+.containersearch{
     width: 20%;
 }
 
-
-/* Search bar */
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-/* blocos */
-
 .containerheadlines{
-    width: 100%;
-    height: 500px;
+    height: 400px;
+    padding: 20px;
     background-color: green;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .block1{
-    width: 35%;
-    height: 85%;
-    background-image: url(img/smartwatch.jpg);
+    width: 30%;
+    height: 100%;
+    background-image: url(img/smartwatch.png);
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.block1 p{
-    color: rgb(0, 0, 0);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.block1 a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     font-size: 25px;
     margin-left: 20px;
+    margin-bottom: 5%;
 }
 
+.containermid{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .block2{
-    width: 35%;
-    height: 35%;
+    width: 100%;
+    height: 50%;
+    background-image: url(img/curso.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.block2 a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-bottom: 5%;    
+}
+
+.block3{
+    width: 100%;
+    height: 50%;
+    background-image: url(img/ia.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+.block3 a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-bottom: 5%;    
+}
+
+.block4{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block4 ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.block4 li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
 }
